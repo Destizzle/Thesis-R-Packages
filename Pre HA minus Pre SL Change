@@ -1,0 +1,45 @@
+data=INDOSL
+
+mean(data$MAP[data$Time==4])-mean(data$MAP[data$Time==2])
+
+mean(data$MCAv[data$Time==4])-mean(data$MCAv[data$Time==2])
+
+mean(data$`MCA PI`[data$Time==4])-mean(data$`MCA PI`[data$Time==2])
+
+mean(data$SaO2[data$Time==4])-mean(data$SaO2[data$Time==2])
+
+mean(data$PetO2[data$Time==4])-mean(data$PetO2[data$Time==2])
+
+mean(data$PETCO2[data$Time==4])-mean(data$PETCO2[data$Time==2])
+
+mean(data$Diameter[data$Time==4])-mean(data$Diameter[data$Time==2])
+
+mean(data$`ICA V`[data$Time==4])-mean(data$`ICA V`[data$Time==2])
+
+mean(data$`ICA Q`[data$Time==4])-mean(data$`ICA Q`[data$Time==2])
+
+mean(data$`ICA PI`[data$Time==4])-mean(data$`ICA PI`[data$Time==2])
+
+mean(data$DF[data$Time==4])-mean(data$DF[data$Time==2])
+
+data=Dobutamine_SL_and_HA
+
+Post=mean(data$MAP[data$Time==4])/mean(data$MCAv[data$Time==4])
+Pre= mean(data$MAP[data$Time==2])/mean(data$MCAv[data$Time==2]) 
+
+Post-Pre
+
+Post=mean(data$MAP[data$Time==4])/mean(data$`ICA Q`[data$Time==4])
+Pre= mean(data$MAP[data$Time==2])/mean(data$`ICA Q`[data$Time==2]) 
+
+Post-Pre
+
+Post=mean(data$MCAv[data$Time==4])/mean(data$MAP[data$Time==4])
+Pre= mean(data$MCAv[data$Time==2])/mean(data$MAP[data$Time==2]) 
+
+Post-Pre
+
+Post=mean(data$`ICA Q`[data$Time==4])/mean(data$MAP[data$Time==4])
+Pre= mean(data$`ICA Q`[data$Time==2])/mean(data$MAP[data$Time==2]) 
+
+Post-Pre
